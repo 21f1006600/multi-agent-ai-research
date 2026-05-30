@@ -12,6 +12,7 @@ tqdm
 rich
 langchain
 langchain-community
+langchain-openai
 colorama
 tavily-python
 duckduckgo-search
