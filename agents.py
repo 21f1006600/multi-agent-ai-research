@@ -27,7 +27,7 @@ def build_reader_agent():
 
 #writer chain LECL pipeline
  
-writer_prompt = ChatPromptTemplate.from_message([
+writer_prompt = ChatPromptTemplate.from_messages([
     ("system", "You are an expert research writer. Write clear, structured and insightful reports."), #system msg 
     ("human", """Write a detailed research report on the topic below.
 
