@@ -11,6 +11,7 @@ aiohttp
 tqdm
 rich
 langchain
+streamlit
 langchain-community
 langchain-openai
 langchain-google-genai
