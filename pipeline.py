@@ -32,7 +32,7 @@ def run_research_pipeline(topic : str) -> dict:
       )]
 })
 
-    state["reader_result"] = reader_result['messages'][-1].content
+    state["scraped_content"] = reader_result['messages'][-1].content
 
     print("\n scraped content: \n", state["scraped_content"])
 
@@ -59,10 +59,10 @@ def run_research_pipeline(topic : str) -> dict:
     print(" ="*50)
 
     state["feedback"] = critic_chain.invoke({
-        "report": [(state["report"])]
+    "report": state["report"]
     })
 
-    print("\n Critic Report:\n", state["critic_report"])
+    print("\n Critic Report:\n", state["feedback"])
 
     return state
 
